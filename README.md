@@ -49,13 +49,49 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+Developed by : Mopuri Saradeepika
+Registration no:212224040201
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+module Halfadder(a,b,sum,carry);
 
-Developed by: RegisterNumber:*/
+input a,b;
+
+output sum,carry;
+
+assign sum=a^b;
+
+assign carry=a&b;
+
+endmodule
+
+
+
+
+module halfsubstractor(a,b,sum,carry);
+
+input a,b;
+
+output sum,carry;
+
+assign sum=a^b;
+
+assign carry=~a&b;
+
+endmodule`
+
 
 **RTL Schematic**
+![RTL-3](https://github.com/user-attachments/assets/003c4218-8a61-42e1-a648-e15257a63e08)
+![Screenshot 2025-04-21 182316](https://github.com/user-attachments/assets/4e189303-1b21-4b32-91b9-1d9f9bdf55d2)
+
+
 
 **Output/TIMING Waveform**
+![Screenshot 2025-04-21 182757](https://github.com/user-attachments/assets/dfb6b093-ccc8-4bf9-87a4-38a59b8bd575)
+![Screenshot 2025-04-21 183013](https://github.com/user-attachments/assets/2bf5457a-63be-4b51-808a-046ab070340c)
+
+
 
 **Result:**
+Thus the half adder and half substractor are verified and studied using Verilog HDL in quartus software
+
